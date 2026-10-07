@@ -1,6 +1,7 @@
 class CreatePost {
-    constructor(postRepository) {
+    constructor(postRepository, eventPublisher) {
         this.postRepository = postRepository;
+        this.eventPublisher = eventPublisher;
     }
 
     async execute({ title, content }) {
@@ -8,7 +9,15 @@ class CreatePost {
             throw new Error("Title and content are required");
         }
 
-        return await this.postRepository.create({ title, content});
+        const post = await this.postRepository.create({ title, content });
+
+        await this.eventPublisher.send("post-created", {
+            event: "post.created",
+            post,
+            timestamp: new Date().toISOString()
+        });
+
+        return post;
     }
 }
 

@@ -1,0 +1,78 @@
+{
+  "info": {
+    "_postman_id": "4bd100ff-f7b7-4f1e-9b11-e9bfad22fe84",
+    "name": "unitsBackendAssessment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50828904",
+    "_collection_link": "https://go.postman.co/collection/50828904-4bd100ff-f7b7-4f1e-9b11-e9bfad22fe84?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create Post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Test\",\r\n  \"content\": \"Testing the complete backend system\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/posts",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/posts",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/posts/:id",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "posts",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "6ac6afe149465d79c051fa39"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
