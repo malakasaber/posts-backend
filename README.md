@@ -1,4 +1,4 @@
-# Posts Backend System
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3d90248f-3d7e-4dea-aa60-3990921683de" /># Posts Backend System
 
 A small event-driven backend system built with **Node.js, Express, MongoDB, Apache Kafka, Docker, and REST APIs**, following a simplified **Domain-Driven Design (DDD)** structure.
 
@@ -311,7 +311,7 @@ The application is deployed on **Amazon Web Services (AWS)** using a Docker-base
 The deployed API is publicly accessible at:
 
 ```text
-<DEPLOYED_API_URL>
+http://16.192.154.189:3000
 ```
 
 The deployed system runs the API, MongoDB, and Kafka services using Docker Compose.
