@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3d90248f-3d7e-4dea-aa60-3990921683de" /># Posts Backend System
+# Posts Backend System
 
 A small event-driven backend system built with **Node.js, Express, MongoDB, Apache Kafka, Docker, and REST APIs**, following a simplified **Domain-Driven Design (DDD)** structure.
 
